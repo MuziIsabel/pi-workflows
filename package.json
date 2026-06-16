@@ -1,0 +1,10 @@
+{
+  "name": "pi-workflows",
+  "version": "1.0.0",
+  "description": "Pi 多 Agent 并行开发模板 —— 用 git worktree 隔离，互不干扰",
+  "keywords": ["pi-package", "multi-agent", "worktree", "parallel-development"],
+  "license": "MIT",
+  "pi": {
+    "prompts": ["./prompts"]
+  }
+}
