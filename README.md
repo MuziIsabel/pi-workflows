@@ -19,20 +19,20 @@ pi install git:github.com/MuziIsabel/pi-workflows
 **用法：**
 
 ```bash
-# 终端 A
+# 终端 A — 不指定分支名，自动生成
 cd your-project
 pi
-> /multi-agent feat-login 实现邮箱密码登录功能
+> /multi-agent 实现邮箱密码登录
 
 # 终端 B
 cd your-project
 pi
-> /multi-agent feat-dash 实现仪表盘页面
+> /multi-agent 实现仪表盘页面
 ```
 
 模板会自动：
-1. 创建分支（不存在则新建）
-2. 创建 worktree 到 `../work-<分支名>`
+1. 从任务描述中生成分支名（如 `feat-login`）
+2. 创建分支 & worktree 到 `../work-<分支名>`
 3. 所有文件操作限制在 worktree 内
 4. 完成后自动提交
 
